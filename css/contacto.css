@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+background: #f0f3ed    
+}
+
+h1 {
+    text-align: center;
+    font-family: "Raleway", sans-serif;
+    font-size: 32px;
+    padding-top: 4%;
+    text-transform: uppercase;
+    color: #403b36;
+}
+
+form {
+    font-family: "Montserrat", sans-serif;
+    width: 35%;
+    height: 50%;
+    background:  #e8eee3;;
+    border:1px solid #ccc;
+    margin:20px auto;
+    padding: 20px;
+}
+
+label {
+    display: block;
+    width: 100%;
+    font-size: 12px;
+}
+
+input, textarea {
+    margin-bottom: 20px;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+textarea {
+    resize: vertical;
+    max-height: 300px;
+    min-height: 100px;
+}
+
+input:focus, textarea:focus {
+    border: 1px solid #1668C4
+}
+
+input[type="submit"] {
+    margin-bottom: 0;
+    background: #1668C4;
+    color: whitesmoke;
+    border: none;
+}
+
+input[type="submit"]:hover {
+    background: #4A88F4;
+    cursor: pointer;
+}
+
+.btn-primary {
+    display: flex;
+    font-family: "Montserrat", sans-serif;
+    text-decoration: none;
+    margin:3% auto;
+    text-align: center;
+    width:80px;
+    max-width: 100%;
+    padding: 10px;
+    font-weight: 580;
+    font-size: 14px;
+    color: #5e5449;
+    background-color: #e0d1b6;
+    border-radius: 6px;
+    border: 2px solid #6d6049;
+  }
+  
+  /*efecto hover de los botones*/
+  .btn-primary:hover {
+    color: #5a7f7c;
+    background-color: whitesmoke;
+  }

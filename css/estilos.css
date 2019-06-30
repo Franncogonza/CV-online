@@ -1,0 +1,231 @@
+/*================================
+                 body color gradiente
+         ====================================*/
+body.home {
+  background-image: linear-gradient(90deg, #1d406d, #3f67a9);
+}
+
+/*================================
+                 Contenedor general
+         ====================================*/
+.conteiner {
+  display: flex;
+  width: 1150px;
+  max-width: 100%;
+  font-family: "Montserrat", sans-serif;
+  background-color: #e6e6e6;
+  margin: 2% auto;
+  overflow: hidden;
+  border-radius: 15px;
+}
+
+/*================================
+                 Columna Izquierda
+         ====================================*/
+.col-izq {
+  display: flex;
+  flex-grow: 30;
+  width: 345px;
+  max-width: 100%;
+  flex-direction: column;
+  justify-content: start;
+  overflow: hidden;
+}
+
+.sidenav {
+  display: flex;
+  flex-direction: column;
+  margin: 5% auto;
+}
+
+header {
+  min-width: 0;
+  margin: 5% auto;
+}
+
+/*imagen del cv*/
+header img {
+  display: flex;
+  margin: 4% auto;
+  width: 240px;
+  max-width: 100%;
+  border-radius: 250px;
+}
+
+/*contenedor de los botones de navegacion*/
+nav {
+  display: flex;
+  flex-direction: column;
+  margin: 2% auto;
+}
+
+/*BOTONES de navegacion*/
+
+.btn-primary {
+  text-decoration: none;
+  margin: 3% auto;
+  text-align: center;
+  width: 80px;
+  max-width: 100%;
+  padding: 10px;
+  font-weight: 580;
+  font-size: 14px;
+  color: #5e5449;
+  background-color: #e0d1b6;
+  border-radius: 6px;
+  border: 2px solid #6d6049;
+}
+
+/*efecto hover de los botones*/
+.btn-primary:hover {
+  color: #5a7f7c;
+  background-color: whitesmoke;
+}
+
+/*================================
+                Columna derecha
+         ====================================*/
+.col-der {
+  display: flex;
+  flex-grow: 70;
+  width: 800px;
+  margin-left: 0;
+  max-width: 100%;
+  flex-direction: column;
+  justify-content: start;
+  overflow: hidden;
+}
+
+/*CONTENEDOR PRIMERA SECCIÓN*/
+.quiensoy {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  overflow: hidden;
+  background: whitesmoke;
+  margin: 2% 4% auto 0;
+  padding: 5%;
+  border-radius: 15px;
+}
+
+/*datos de contacto, email, linkedin, skype, etc*/
+.quiensoy ul li {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  overflow: hidden;
+  margin: 1.5% auto;
+  font-size: 12px;
+  font-weight: bolder;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #634242;
+  text-transform: uppercase;
+  letter-spacing: 2pt;
+}
+
+/*CONTENEDOR SEGUNDA SECCIÓN*/
+.formacion {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  background: whitesmoke;
+  margin: 2% 4% auto 0;
+  padding: 5%;
+  border-radius: 15px;
+}
+
+/*CONTENEDOR TERCERA SECCIÓN*/
+.experiencia {
+  display: flex;
+  flex-direction: column;
+  background: whitesmoke;
+  margin: 2% 4% auto 0;
+  padding: 5%;
+  border-radius: 15px;
+}
+
+/*CONTENEDOR CUARTA SECCIÓN*/
+.idiomas {
+  display: flex;
+  flex-direction: column;
+  background: whitesmoke;
+  margin: 2% 4% auto 0;
+  padding: 5%;
+  border-radius: 15px;
+}
+
+/*CONTENEDOR QUINTA SECCIÓN*/
+.portfolio {
+  display: flex;
+  flex-direction: column;
+  background: whitesmoke;
+  margin: 2% 4% auto 0;
+  padding: 5%;
+
+  border-radius: 15px;
+}
+
+/*CONTENEDOR UL DE LAS IMAGENES */
+.imgportfolio {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/*IMAGENES DEL PORTFOLIO */
+.portfolio ul li a .pic {
+  width: 150px;
+  height: 150px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: auto;
+}
+
+/*================================
+                h1 h2 h3 p (hr con sus respectivas clases)
+         ====================================*/
+
+h1 {
+  font-family: "Raleway", sans-serif;
+  font-size: 32px;
+  margin-bottom: 1.5%;
+  margin-top: 2%;
+  text-transform: uppercase;
+  color: #403b36;
+}
+
+h2 {
+  color: #5a7f7c;
+  font-size: 22px;
+  margin-bottom: 1%;
+  font-family: "Noto Sans HK", sans-serif;
+}
+
+h3 {
+  /* color: #cf5209; */
+  color: #5a7f7c;
+  font-size: 16px;
+  margin-bottom: 2%;
+  margin-top: 2%;
+}
+
+p {
+  /* font-family: "Roboto", sans-serif; */
+  font-family: Helvetica, sans-serif;
+  color: #5e5449;
+  font-size: 14px;
+  margin-bottom: 1%;
+  text-align: justify;
+}
+
+hr.recta {
+  border-color: #5a7f7c;
+
+  margin: 0.5% 0% 1% 0%;
+}
+/*  
+hr.puntos {
+  font-size: 3px;
+  margin: 1.2% 0% 1% 0%;
+  border: 0.1px dotted red;
+}*/
