@@ -220,7 +220,7 @@ hr.recta {
   margin: 0.5% 0% 1% 0%;
 }
 
-@media (max-width: 800px) {
+@media screen and (max-width: 800px) {
   .conteiner {
     display: inline-block;
     width: 100%;
