@@ -9,38 +9,30 @@ body.home {
                  Contenedor general
          ====================================*/
 .conteiner {
-  display: flex;
-  width: 1150px;
-  max-width: 100%;
-  font-family: "Montserrat", sans-serif;
+  display: grid;
+  grid-template-columns: 34% 66%;
+  width: 100%;
+  /* font-family: "Montserrat", sans-serif; */
+  font: 400 13px/23px IBM Plex Sans;
   background-color: #e6e6e6;
   margin: 2% auto;
-  overflow: hidden;
-  border-radius: 15px;
+  border-radius: 12px;
 }
 
 /*================================
                  Columna Izquierda
          ====================================*/
-.col-izq {
-  display: flex;
-  flex-grow: 30;
-  width: 345px;
-  max-width: 100%;
-  flex-direction: column;
-  justify-content: start;
-  overflow: hidden;
-}
-
 .sidenav {
   display: flex;
   flex-direction: column;
   margin: 5% auto;
+  /* justify-content: center; */
 }
 
 header {
-  min-width: 0;
   margin: 5% auto;
+  display: flex;
+  justify-content: center;
 }
 
 /*imagen del cv*/
@@ -63,12 +55,11 @@ nav {
 
 .btn-primary {
   text-decoration: none;
-  margin: 3% auto;
+  margin: 4% auto;
   text-align: center;
-  width: 80px;
-  max-width: 100%;
+  width: 100px;
   padding: 10px;
-  font-weight: 580;
+  font-weight: 553;
   font-size: 14px;
   color: #5e5449;
   background-color: #e0d1b6;
@@ -85,16 +76,6 @@ nav {
 /*================================
                 Columna derecha
          ====================================*/
-.col-der {
-  display: flex;
-  flex-grow: 70;
-  width: 800px;
-  margin-left: 0;
-  max-width: 100%;
-  flex-direction: column;
-  justify-content: start;
-  overflow: hidden;
-}
 
 /*CONTENEDOR PRIMERA SECCIÓN*/
 .quiensoy {
@@ -102,10 +83,12 @@ nav {
   flex-direction: column;
   flex-wrap: nowrap;
   overflow: hidden;
-  background: whitesmoke;
+  /* background: whitesmoke; */
+  background: rgb(255, 255, 255);
   margin: 2% 4% auto 0;
   padding: 5%;
   border-radius: 15px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 }
 
 /*datos de contacto, email, linkedin, skype, etc*/
@@ -128,41 +111,48 @@ nav {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
-  background: whitesmoke;
+  /* background: whitesmoke; */
+  background: rgb(255, 255, 255);
   margin: 2% 4% auto 0;
   padding: 5%;
   border-radius: 15px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 }
 
 /*CONTENEDOR TERCERA SECCIÓN*/
 .experiencia {
   display: flex;
   flex-direction: column;
-  background: whitesmoke;
+  /* background: whitesmoke; */
+  background: rgb(255, 255, 255);
   margin: 2% 4% auto 0;
   padding: 5%;
   border-radius: 15px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 }
 
 /*CONTENEDOR CUARTA SECCIÓN*/
 .idiomas {
   display: flex;
   flex-direction: column;
-  background: whitesmoke;
+  background: rgb(255, 255, 255);
+  /* background: whitesmoke; */
   margin: 2% 4% auto 0;
   padding: 5%;
   border-radius: 15px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 }
 
 /*CONTENEDOR QUINTA SECCIÓN*/
 .portfolio {
   display: flex;
   flex-direction: column;
-  background: whitesmoke;
+  /* background: whitesmoke; */
+  background: rgb(255, 255, 255);
   margin: 2% 4% auto 0;
   padding: 5%;
-
   border-radius: 15px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 }
 
 /*CONTENEDOR UL DE LAS IMAGENES */
@@ -170,6 +160,9 @@ nav {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  /* display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-template-rows: auto; */
 }
 
 /*IMAGENES DEL PORTFOLIO */
@@ -192,6 +185,7 @@ h1 {
   margin-top: 2%;
   text-transform: uppercase;
   color: #403b36;
+  opacity: 1;
 }
 
 h2 {
@@ -199,33 +193,47 @@ h2 {
   font-size: 22px;
   margin-bottom: 1%;
   font-family: "Noto Sans HK", sans-serif;
+  opacity: 1;
 }
 
 h3 {
   /* color: #cf5209; */
   color: #5a7f7c;
   font-size: 16px;
-  margin-bottom: 2%;
+  margin-bottom: 1%;
   margin-top: 2%;
+  opacity: 1;
 }
 
 p {
-  /* font-family: "Roboto", sans-serif; */
-  font-family: Helvetica, sans-serif;
+  font-family: "Roboto", sans-serif;
+  /* font-family: Helvetica, sans-serif; */
   color: #5e5449;
   font-size: 14px;
   margin-bottom: 1%;
   text-align: justify;
+  opacity: 1;
 }
 
 hr.recta {
   border-color: #5a7f7c;
-
   margin: 0.5% 0% 1% 0%;
 }
-/*  
-hr.puntos {
-  font-size: 3px;
-  margin: 1.2% 0% 1% 0%;
-  border: 0.1px dotted red;
-}*/
+
+@media (max-width: 800px) {
+  .conteiner {
+    display: inline-block;
+    width: 100%;
+  }
+.btn-primary {
+    display: block;
+    width: 150px;
+  }
+  .quiensoy,
+  .formacion,
+  .experiencia,
+  .idiomas,
+  .portfolio {
+    margin-bottom: 10%;
+  }
+}
