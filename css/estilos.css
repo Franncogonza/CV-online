@@ -236,4 +236,8 @@ hr.recta {
   .portfolio {
     margin-bottom: 10%;
   }
+  body.home {
+    background-color: #e6e6e6;
+  }
+  
 }
